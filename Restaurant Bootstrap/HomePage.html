@@ -18,8 +18,27 @@
             href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"/>
 
         <!-- Latest compiled and minified JavaScript -->
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js">
-        </script>                
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> 
+        <style>
+            .jumbotron {
+                    color:darkred;
+                    background-color: bisque;
+            }
+
+            .carousel {
+                background-color: brown;
+                color: lightyellow;
+            }
+            .carousel .item h3{
+                margin: 10 auto; /* Align slide text horizontally center */
+            }
+
+            #noscript {
+                color:red;
+            }
+
+        </style>               
     </head>
     <body>
         <div class="container" align="center">
@@ -44,19 +63,60 @@
                     <div class="row">
                         <div class="col-md-4" ></div>
                         <div class="col-md-4">
-                            <img src="images\Artesano.jpg" style="width: 400px; height: 150px; align-items: center"/>
+                            <img src="images\Artesano.jpg" style="width: 400px; height: 150px; align-items: center; margin-top: 10px;"/>
                         </div>
                         <div class="col-md-4" ></div>
                     </div>
+                    <br>
+                    <noscript><h5 id="noscript">JavaScript is disabled! This site is best viewed with JavaScript enabled.</h5></noscript>
+                    <div class="row">
+		                <div class="col-sm-12">
+                            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                                <li data-target="#myCarousel" data-slide-to="1"></li>
+                                <li data-target="#myCarousel" data-slide-to="2"></li>
+                                </ol>
+
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner" role="listbox">
+
+                                    <div class="item active">
+                                        <h3>We're opening a new location!</h3>
+                                    </div>
+
+                                    <div class="item">
+                                        <h3>We're rolling out our seasonal menu, with special options for this season.</h3>
+                                    </div>
+                                    
+                                    <div class="item">
+                                        <h3>The Drink of the Month is SG Special Brew.</h3>
+                                    </div>
+                                </div>
+
+                                <!-- Left and right controls -->
+                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="row">
                         <div class="col-md-12" >
-                            <p style="color:saddlebrown; ">Restaurant Descripton</p>
+                            <h3 style="color:saddlebrown; margin-top: 5px;">Restaurant Description</h3>
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-md-4" ></div>
-                        <div class="col-md-4 text-justify" >
-                            <p style="color:saddlebrown; ">You step into Artesano and you instantly feel it, like you are on a vacation, but you are also home. The sights...the background music...the aromas. Whether you are sharing tapas with friends or dining with that special someone, Artesano is your mini Spanish getaway right here in Louisville.</p>
+                        <div class="col-md-4" >
+                            <p style="color:saddlebrown; padding: 10px; ">You step into Artesano and you instantly feel it, like you are on a vacation, but you are also home. The sights...the background music...the aromas. Whether you are sharing tapas with friends or dining with that special someone, Artesano is your mini Spanish getaway right here in Louisville.</p>
                         </div>
                         <div class="col-md-4" ></div>
                     </div>
