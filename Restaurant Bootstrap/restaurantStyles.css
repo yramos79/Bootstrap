@@ -50,3 +50,12 @@
     font-weight: bold;
     text-align: right;
 }
+
+.notrequired {
+    font-weight: normal;
+    text-align: right;
+}
+
+.right {
+    text-align: left;
+}
