@@ -14,8 +14,8 @@
                 font-family:cursive,sans-serif;
             }
 
-            #contactform td {
-                block-size: 30px;
+            #contactform div, #contactform radio {
+                padding: 2px;
             }
         </style>   
         <meta charset="utf-8">                
@@ -46,69 +46,74 @@
                 </ul>
             </div>
             <hr/>
+            <div class="container">
             <form action="ContactFakePage.html" method="POST">
-                <table id="contactform">
-                    <tr>
-                        <td class="required" >Name:</td>
-                        <td>
-                        <input type="text" name="name" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="required" >Email:</td>
-                        <td>
-                        <input type="text" name="email" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="required" >Phone:</td>
-                        <td>
-                        <input type="text" name="phone" />
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="required" >Reason for Inquiry:</td>
-                        <td>
+                <div id="contactform">
+                    <div class="row">
+                        <div class="col-xs-6 required">Name:</div>
+                        <div class="col-xs-6 right"><input type="text" name="name" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 required">Email:</div>
+                        <div class="col-xs-6 right"><input type="text" name="email" /></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-6 required">Phone:</div>
+                        <div class="col-xs-6 right"><input type="text" name="phone" /></div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-xs-6 required">Reason for Inquiry:</div>
+                        <div class="col-xs-6 right">
                             <select name="reasons"> 
                                 <option value"Catering" selected>Catering</option>
                                 <option value="Private Party">Private Party</option>
                                 <option value="Feedback">Feedback</option>
                                 <option value="Other">Other</option>
                             </select>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">Additional Information:</td>
-                        <td height="80">
+                        </div>
+                    </div> 
+                    <div class="row">
+                        <div class="col-xs-6 notrequired">Additional Information:</div>
+                        <div class="col-xs-6 right">
                             <textarea name="info" rows="4" cols="25" ></textarea>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align="right">Have you been to the restaurant?</td>
-                        <td>
-                        <input type="radio" name="visited" value="No" checked/>No
-                        <input type="radio" name="visited" value="Yes"/>Yes
-                        </td>
-                    </tr>
-                                    
-                    <tr>
-                        <td align="right">Best days to contact you:</td>
-                        <td>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-xs-6 notrequired">Have you been to the restaurant?</div>
+                        <div class="col-xs-1 right">
+                            <input type="radio" name="visited" value="No" checked/>No
+                        </div>
+                        <div class="col-xs-5 right">
+                            <input type="radio" name="visited" value="Yes"/>Yes
+                        </div>                        
+                    </div>  
+                    <div class="row">
+                        <div class="col-xs-6 notrequired">Best days to contact you:</div>
+                        <div class="col-xs-1 right">
                             <input type="checkbox" name="M" value="1" />M
+                        </div>
+                        <div class="col-xs-1 right">
                             <input type="checkbox" name="T" value="2" />T
+                        </div>
+                        <div class="col-xs-1 right">
                             <input type="checkbox" name="W" value="3" />W
+                        </div>
+                        <div class="col-xs-1 right">
                             <input type="checkbox" name="Th" value="4" />Th
+                        </div>    
+                        <div class="col-xs-2 right">
                             <input type="checkbox" name="F" value="5" />F
-                        </td>
-                    </tr>
-                    <tr>
-                        <td></td>
-                        <td align="right">
-                            <input type="submit" name="send" value="Send Request" />                    
-                        </td>
-                    </tr>
-                </table>
+                        </div>  
+                    </div> 
+                    <div class="row">
+                        <div class="col-xs-6 notrequired"></div>
+                        <div class="col-xs-6 right">
+                            <input type="submit" name="send" value="Send Request" />
+                        </div>
+                    </div>                     
+                </div>
             </form>
+            </div>
             <hr/>
             <div class="footer">
                 <p>123 Main St, Louisville, KY. 40202</p>
